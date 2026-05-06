@@ -1,0 +1,38 @@
+/* components/Testimonials.css */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: var(--gray);
+}
+
+.testimonial-card h4 {
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.testimonial-card span {
+  color: var(--accent);
+  font-size: 0.9rem;
+}

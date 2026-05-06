@@ -1,0 +1,61 @@
+/* components/PrivacyModal.css */
+.privacy-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.privacy-modal-container {
+  background: var(--white);
+  max-width: 800px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.privacy-modal-header {
+  padding: 20px 25px;
+  background: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy-modal-header h3 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.privacy-close-modal {
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.privacy-modal-body {
+  padding: 30px;
+}
+
+.privacy-modal-body h4 {
+  color: var(--primary);
+  margin: 20px 0 10px 0;
+}
+
+.privacy-modal-body h4:first-child {
+  margin-top: 0;
+}
+
+.privacy-modal-body p {
+  line-height: 1.6;
+  color: var(--text);
+}
