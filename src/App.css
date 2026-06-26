@@ -5,8 +5,9 @@
   --accent: #3b82f6;
   --accent-glow: #60a5fa;
   --accent-dark: #2563eb;
-  --secondary: #8b5cf6;
-  --secondary-glow: #a78bfa;
+  --secondary: #f97316;
+  --secondary-glow: #fb923c;
+  --secondary-dark: #ea580c;
   --success: #10b981;
   --warning: #f59e0b;
   --dark: #020617;
@@ -16,8 +17,8 @@
   --white: #ffffff;
   --glass: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-1: linear-gradient(135deg, #3b82f6 0%, #f97316 100%);
+  --gradient-2: linear-gradient(135deg, #60a5fa 0%, #fb923c 100%);
   --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
 }
