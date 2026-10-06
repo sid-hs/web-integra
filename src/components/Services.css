@@ -181,6 +181,7 @@
 .gradient-orange { background: linear-gradient(135deg, #f59e0b, #b45309); }
 .gradient-pink { background: linear-gradient(135deg, #ec4899, #be185d); }
 .gradient-red { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.gradient-medical { background: linear-gradient(135deg, #4cc9f0, #2c7a93); }
 
 /* Contenido */
 .service-content h3 {

@@ -58,6 +58,16 @@ const servicesData = [
     }
   },
   {
+    id: 10,
+    title: "Integra-IO PACS",
+    description: "Plataforma PACS en la nube sobre Orthanc: almacena, visualiza y comparte estudios DICOM.",
+    icon: "fa-x-ray",
+    category: "cloud",
+    gradient: "gradient-medical",
+    features: ["Visor DICOM web", "NOM-024-SSA3", "Datos en México"],
+    externalUrl: "pacs.html"
+  },
+  {
     id: 4,
     title: "Servidores VPS",
     description: "Configuración y administración de servidores virtuales con alta disponibilidad.",
@@ -256,7 +266,9 @@ function Services({ onServiceClick }) {
               key={service.id} 
               className={`service-card reveal`}
               style={{ animationDelay: `${index * 0.05}s` }}
-              onClick={() => onServiceClick(service.fullData)}
+              onClick={() => service.externalUrl
+                ? window.open(import.meta.env.BASE_URL + service.externalUrl, '_blank', 'noopener')
+                : onServiceClick(service.fullData)}
             >
               <div className={`service-icon ${service.gradient}`}>
                 <i className={`fas ${service.icon}`}></i>
@@ -284,7 +296,7 @@ function Services({ onServiceClick }) {
               </div>
               <div className="service-overlay"></div>
               <div className="service-arrow">
-                <i className="fas fa-arrow-right"></i>
+                <i className={`fas ${service.externalUrl ? 'fa-external-link-alt' : 'fa-arrow-right'}`}></i>
               </div>
             </div>
           ))}
