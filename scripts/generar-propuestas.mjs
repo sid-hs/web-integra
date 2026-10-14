@@ -2,7 +2,7 @@
 // Uso: node scripts/generar-propuestas.mjs
 // Escribe en propuestas/ (fuera de public/ a propósito: son borradores, no se despliegan).
 import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -12,6 +12,14 @@ const MAIL = 'contacto@integra-io.com';
 
 // Logo corporativo embebido en base64 (mismo estilo que las propuestas de complemento)
 const LOGO_URI = 'data:image/png;base64,' + readFileSync(join(ROOT, 'scripts', 'activo-logo-integra.png')).toString('base64');
+
+// Las páginas públicas llevan la foto del hero embebida en base64 (autocontenidas en producción)
+const IMG_MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png' };
+const heroImgUri = (s) => {
+  if (!s.publico) return IMGS[s.slug].file;
+  const file = join(ROOT, 'propuestas', IMGS[s.slug].file);
+  return `data:${IMG_MIME[extname(file)] || 'image/jpeg'};base64,` + readFileSync(file).toString('base64');
+};
 
 const servicios = [
   {
@@ -898,7 +906,7 @@ ${s.fxGears ? '<div class="hero-zone">' + gearSvg(s) : ''}
   </div>
   <div class="hero-visual">
     <figure class="hero-photo">
-      <img src="${IMGS[s.slug].file}" alt="${IMGS[s.slug].alt}" loading="eager">
+      <img src="${heroImgUri(s)}" alt="${IMGS[s.slug].alt}" loading="eager">
       <figcaption>${IMGS[s.slug].cap}</figcaption>
     </figure>
     <div class="mock">
