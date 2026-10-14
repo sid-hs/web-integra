@@ -28,16 +28,8 @@ const servicesData = [
     icon: "fa-wifi",
     category: "infraestructura",
     gradient: "gradient-purple",
-    features: ["WiFi 6/E", "Seguridad avanzada", "SD-WAN"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
-    fullData: {
-      title: "Redes Informáticas",
-      description: "Redes LAN, WiFi empresarial de alta densidad y SD-WAN.",
-      images: Array(9).fill().map((_, i) => ({
-        src: `https://picsum.photos/id/${200 + i * 15}/800/600`,
-        desc: `Redes - Imagen ${i + 1}`
-      }))
-    }
+    features: ["WiFi 6/E", "VLAN y VPN", "SD-WAN"],
+    externalUrl: "redes.html"
   },
   {
     id: 3,

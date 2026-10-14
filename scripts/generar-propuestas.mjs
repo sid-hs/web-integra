@@ -153,6 +153,11 @@ const servicios = [
       { label: 'WhatsApp', href: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa', ext: true },
     ],
     ctaWa: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa',
+    publico: true,
+    publicPath: 'redes.html',
+    seoTitle: 'Redes informáticas para empresas: VLAN, VPN y SD-WAN | Integra-IO',
+    seoDesc: 'Integra-IO diseña e instala redes cableadas e inalámbricas para empresas: segmentación por VLAN, VPN, SD-WAN entre sucursales y monitoreo continuo.',
+    footNote: 'Esquemas, cifras y alcances son de referencia y se confirman en cotización personalizada. Capturas y nombres de ejemplo son ilustrativos. Los SLA y alcances finales se fijan por contrato según el caso.',
     jsonld: `<script type="application/ld+json">
 {
   "@context":"https://schema.org",
