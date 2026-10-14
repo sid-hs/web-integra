@@ -146,16 +146,8 @@ const servicesData = [
     icon: "fa-database",
     category: "cloud",
     gradient: "gradient-blue",
-    features: ["Backup automático", "Recuperación rápida", "Cifrado AES-256"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
-    fullData: {
-      title: "Cloud Backup",
-      description: "Soluciones de respaldo en la nube con recuperación ante desastres.",
-      images: Array(9).fill().map((_, i) => ({
-        src: `https://picsum.photos/id/${800 + i * 20}/800/600`,
-        desc: `Cloud Backup - Imagen ${i + 1}`
-      }))
-    }
+    features: ["Cifrado AES-256", "Regla 3-2-1", "NAS a la medida"],
+    externalUrl: "backup.html"
   },
   {
     id: 9,
