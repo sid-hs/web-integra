@@ -77,7 +77,6 @@ function Contact() {
                 <div className="method-details">
                   <h4>Oficina</h4>
                   <p>Ciudad de Puebla, México</p>
-                  <span>Diagonal Defensores de la República 225 - 101A</span>
                 </div>
               </div>
             </div>

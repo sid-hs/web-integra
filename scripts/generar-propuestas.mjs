@@ -9,9 +9,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'propuestas');
 
 const MAIL = 'contacto@integra-io.com';
-
-// Logo corporativo embebido en base64 (mismo estilo que las propuestas de complemento)
-const LOGO_URI = 'data:image/png;base64,' + readFileSync(join(ROOT, 'scripts', 'activo-logo-integra.png')).toString('base64');
+const TEL_DISPLAY = '222 544 7232';
+const TEL_TEL = 'tel:+522225447232';
+const TEL_WA = 'https://wa.me/522225447232';
 
 // Las páginas públicas llevan la foto del hero embebida en base64 (autocontenidas en producción)
 const IMG_MIME = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png' };
@@ -154,13 +154,13 @@ const servicios = [
       { q: '¿Cuándo conviene SD-WAN?', a: 'Cuando tienes dos o más sucursales y dependes de sistemas en la nube o centralizados. Aprovecha varios enlaces de internet y reduce caídas.' },
       { q: '¿Trabajan con empresas pequeñas?', a: 'Sí. Dimensionamos la red según tu tamaño, desde una oficina hasta varias sedes.' },
       { q: '¿Qué incluye el monitoreo continuo?', a: 'Supervisión de enlaces y equipos las 24 horas, alertas ante fallas y revisión del consumo de ancho de banda.' },
-      { q: '¿Cómo pido una cotización?', a: 'Escríbenos por WhatsApp o correo, llámanos al 33 4944 4224 o usa el botón de cotización de esta página.' },
+      { q: '¿Cómo pido una cotización?', a: 'Escríbenos por WhatsApp o correo, llámanos al 222 544 7232 o usa el botón de cotización de esta página.' },
     ],
     ctaChannels: [
-      { label: 'Tel. 33 4944 4224', href: 'tel:+523349444224' },
-      { label: 'WhatsApp', href: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa', ext: true },
+      { label: 'Tel. 222 544 7232', href: 'tel:+522225447232' },
+      { label: 'WhatsApp', href: 'https://wa.me/522225447232?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa', ext: true },
     ],
-    ctaWa: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa',
+    ctaWa: 'https://wa.me/522225447232?text=Hola%2C%20quiero%20cotizar%20una%20red%20para%20mi%20empresa',
     publico: true,
     publicPath: 'redes.html',
     seoTitle: 'Redes informáticas para empresas: VLAN, VPN y SD-WAN | Integra-IO',
@@ -170,7 +170,7 @@ const servicios = [
 {
   "@context":"https://schema.org",
   "@graph":[
-    {"@type":"Organization","name":"Integra-IO","alternateName":"Sistemas de Integración","email":"contacto@integra-io.com","telephone":"+52-33-4944-4224","areaServed":"MX"},
+    {"@type":"Organization","name":"Integra-IO","alternateName":"Sistemas de Integración","email":"contacto@integra-io.com","telephone":"+52-222-544-7232","areaServed":"MX"},
     {"@type":"Service","serviceType":"Redes informáticas","name":"Redes empresariales cableadas e inalámbricas","areaServed":"MX","description":"Diseño e instalación de redes con segmentación VLAN, VPN, SD-WAN entre sucursales y monitoreo continuo."}
   ]
 }
@@ -532,11 +532,11 @@ const servicios = [
       { q: '¿Qué puedo respaldar?', a: 'Servidores físicos y virtuales, bases de datos, equipos de escritorio y laptops, carpetas compartidas o NAS, y cuentas de Microsoft 365 y Google Workspace.' },
       { q: '¿Qué pasa si sufro un ransomware?', a: 'Conservamos varias versiones anteriores de tus archivos. Después de limpiar el equipo, se restaura la última versión sana.' },
       { q: '¿Cuánto cuesta?', a: 'Depende de cuánta información respaldes y por cuánto tiempo la conserves. Cuéntanos tu caso y te enviamos una cotización.' },
-      { q: '¿Cómo solicito una cotización?', a: 'Escríbenos a contacto@integra-io.com, llámanos al 33 4944 4224 o manda un WhatsApp desde el botón de esta página.' },
+      { q: '¿Cómo solicito una cotización?', a: 'Escríbenos a contacto@integra-io.com, llámanos al 222 544 7232 o manda un WhatsApp desde el botón de esta página.' },
     ],
     ctaChannels: [
-      { label: 'Tel. 33 4944 4224', href: 'tel:+523349444224' },
-      { label: 'WhatsApp', href: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20Cloud%20Backup', ext: true },
+      { label: 'Tel. 222 544 7232', href: 'tel:+522225447232' },
+      { label: 'WhatsApp', href: 'https://wa.me/522225447232?text=Hola%2C%20quiero%20cotizar%20Cloud%20Backup', ext: true },
     ],
     nas: {
       title: 'El repositorio local, a su medida',
@@ -568,7 +568,7 @@ const servicios = [
         { nombre: 'Crítico', perfil: 'Multi-sitio o regulado (salud/fintech) · 10+ TB', precio: 'Desde USD 110', unidad: '/TB/mes', min: 'cotización por alcance', puntos: ['Todo lo de Negocio + BDs cada hora + DR documentado', 'RPO 1–4 h · RTO 1–2 h', '90 diarios + 12 mensuales + 7 anuales, inmutables', 'Pruebas mensuales + simulacro anual de desastre', 'Respuesta ≤ 1 h con guardia 24/7'] },
       ],
     },
-    ctaWa: 'https://wa.me/523349444224?text=Hola%2C%20quiero%20cotizar%20Cloud%20Backup',
+    ctaWa: 'https://wa.me/522225447232?text=Hola%2C%20quiero%20cotizar%20Cloud%20Backup',
     publico: true,
     publicPath: 'backup.html',
     pdfHref: 'backup-estrategia.pdf',
@@ -579,7 +579,7 @@ const servicios = [
 {
   "@context":"https://schema.org",
   "@graph":[
-    {"@type":"Organization","name":"Integra-IO","alternateName":"Sistemas de Integración","email":"contacto@integra-io.com","telephone":"+52-33-4944-4224","areaServed":"MX"},
+    {"@type":"Organization","name":"Integra-IO","alternateName":"Sistemas de Integración","email":"contacto@integra-io.com","telephone":"+52-222-544-7232","areaServed":"MX"},
     {"@type":"Service","serviceType":"Cloud Backup","name":"Cloud Backup empresarial","areaServed":"MX","description":"Respaldo en la nube de servidores, bases de datos, correo y equipos, con cifrado y pruebas de restauración."},
     {"@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"¿Qué es un Cloud Backup?","acceptedAnswer":{"@type":"Answer","text":"Es una copia de tus datos guardada fuera de tu oficina, en servidores en la nube, para recuperarla ante fallas, robos, errores humanos o ransomware."}},
@@ -685,7 +685,6 @@ const css = `
   .ribbon{position:sticky;top:0;z-index:50;background:#431407;color:#FDBA74;font-family:var(--font-data);font-size:.68rem;letter-spacing:.08em;text-align:center;padding:7px 12px;text-transform:uppercase;}
   .topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line);}
   .brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:600;font-size:1.05rem;}
-  .brand-logo{height:46px;width:auto;display:block;background:#fff;border-radius:8px;padding:3px 8px;flex:none;}
   .topbar-cta{font-weight:500;font-size:.92rem;padding:9px 18px;border-radius:7px;border:1px solid var(--acc-dim);background:transparent;color:var(--text);white-space:nowrap;text-decoration:none;}
   .hero{padding:64px 0 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center;}
   .eyebrow{font-size:.86rem;color:var(--text-dim);display:flex;align-items:center;gap:8px;margin-bottom:18px;}
@@ -884,7 +883,7 @@ ${s.jsonld || ''}
 ${s.publico ? '' : '<div class="ribbon">Propuesta de diseño · borrador para revisión · no integrado al sitio</div>'}
 
 <div class="wrap topbar">
-  <div class="brand"><img class="brand-logo" alt="Integra-IO · Sistemas de Integración" src="${LOGO_URI}"><span>${s.nombre}</span></div>
+  <div class="brand">Integra-IO · ${s.nombre}</div>
   <a class="topbar-cta" href="#demo">Agendar demostración</a>
 </div>
 
@@ -1090,8 +1089,6 @@ function index(list) {
 <title>[PROPUESTAS] Integra-IO — landings de servicios para revisión</title>
 <style>
   body{margin:0;background:#0A1018;color:#E7ECF3;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.5;}
-  .logo-index{height:46px;width:auto;display:block;background:#fff;border-radius:8px;padding:3px 8px;margin-bottom:8px;}
-  .wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px;}
   .ribbon{background:#431407;color:#FDBA74;font-family:Consolas,monospace;font-size:.7rem;letter-spacing:.08em;text-align:center;padding:7px 12px;text-transform:uppercase;}
   h1{font-size:1.8rem;margin:28px 0 8px;}
   .sub{color:#93A1B8;margin:0 0 32px;max-width:60ch;}
@@ -1108,7 +1105,6 @@ function index(list) {
 <body>
 <div class="ribbon">Propuestas · borradores para revisión · no integrados al sitio</div>
 <div class="wrap">
-  <img class="logo-index" alt="Integra-IO · Sistemas de Integración" src="${LOGO_URI}">
   <h1>Landings propuestas por servicio</h1>
   <p class="sub">Borradores con el mismo lenguaje de diseño que la página publicada de Integra-IO PACS. Ábrelas, anota ajustes y las que apruebes se integran como servicios clicables, igual que el PACS.</p>
   <div class="grid">

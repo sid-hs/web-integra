@@ -7,8 +7,8 @@
 | | |
 |---|---|
 | **Empresa** | Integra-IO (integra-io.com) |
-| **Ubicación** | Puebla, México — Diagonal Defensores de la República 225-101A |
-| **Contacto** | contacto@integra-io.com · 33 4944 4224 |
+| **Ubicación** | Puebla, México |
+| **Contacto** | contacto@integra-io.com · 222 544 7232 |
 | **Fecha del documento** | 13 de octubre de 2026 |
 | **Fecha de consulta de precios** | 13 de octubre de 2026 (fuentes oficiales de cada proveedor) |
 
@@ -328,7 +328,6 @@ Integra-IO diseña, implementa y opera su estrategia de respaldo en la nube con 
 **Conversemos sobre su caso:**
 
 > **Integra-IO — Integración Tecnológica, Puebla, México**
-> Diagonal Defensores de la República 225-101A, Puebla
-> contacto@integra-io.com · 33 4944 4224 · integra-io.com
+> contacto@integra-io.com · 222 544 7232 · integra-io.com
 
 *Documento elaborado en octubre de 2026. Precios de terceros verificados el 13/10/2026 en fuentes oficiales (Backblaze, AWS, Wasabi, Microsoft Azure, Veeam, MSP360, Acronis, Synology, Afi.ai, SkyKick) y sujetos a cambio; confirman vigencia y alcance en la cotización.*
